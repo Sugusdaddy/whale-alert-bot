@@ -1,0 +1,32 @@
+{
+  "name": "@sugusdaddy/whale-alert-bot",
+  "version": "1.0.0",
+  "description": "Real-time whale transaction monitoring bot for Solana with Telegram and Discord notifications",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "axios": "^1.6.0",
+    "decimal.js": "^10.4.3",
+    "eventemitter3": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/node-telegram-bot-api": "^0.64.0",
+    "tsx": "^4.7.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": ["solana", "whale", "alert", "monitoring", "telegram", "discord", "defi"],
+  "author": "Sugusdaddy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sugusdaddy/whale-alert-bot"
+  }
+}
